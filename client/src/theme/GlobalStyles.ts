@@ -19,4 +19,33 @@ export const GlobalStyles = createGlobalStyle`
   a {
     text-decoration: none;
   }
+
+  h1, h2, h3, h4 {
+    font-weight: 700;
+  }
+
+  h1 {
+    font-size: 1.75rem; // 28px
+    line-height: 2.125rem; // 34px
+  }
+
+  h2 {
+    font-size: 1.5rem; // 24px
+    line-height: 1.8125rem; // 29px
+  }
+
+  h3 {
+    font-size: 1.25rem; // 20px
+    line-height: 1.5rem; // 24px
+  }
+
+  h4 {
+    font-size: 0.875rem; // 14px
+    line-height: 1.125rem; // 18px
+  }
+
+  p {
+    font-size: 1rem; // 16px
+    line-height: 1.625rem; // 26px
+  }
 `;
