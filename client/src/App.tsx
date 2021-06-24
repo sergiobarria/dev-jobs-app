@@ -5,30 +5,21 @@ import { ThemeProvider } from 'styled-components';
 
 import { GlobalStyles } from './theme/GlobalStyles';
 import { lightTheme, darkTheme } from './theme/Themes';
-// import { useActions } from './hooks/useActions';
+import Layout from './components/layout/Layout';
 
 import Routes from './routes';
 
 const App: React.FC = () => {
-  // const { lightThemeOn, darkThemeOn } = useActions();
   const { isDarkTheme } = useSelector(state => state.theme);
-
-  // const toggleTheme = () => {
-  //   if (isDarkTheme) {
-  //     lightThemeOn();
-  //   }
-  //   if (!isDarkTheme) {
-  //     darkThemeOn();
-  //   }
-  // };
 
   return (
     <ThemeProvider theme={isDarkTheme ? darkTheme : lightTheme}>
-      <GlobalStyles />
       <Router>
-        <Routes />
+        <Layout>
+          <GlobalStyles />
+          <Routes />
+        </Layout>
       </Router>
-      {/* <button onClick={toggleTheme}>Hellooow</button> */}
     </ThemeProvider>
   );
 };
