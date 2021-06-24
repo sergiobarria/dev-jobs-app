@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import { useSelector } from '../../hooks/useTypedSelector';
 import { useActions } from '../../hooks/useActions';
 
-const ThemeSwitch = () => {
+const ThemeSwitch: React.FC = () => {
   const { lightThemeOn, darkThemeOn } = useActions();
   const { isDarkTheme } = useSelector(state => state.theme);
 

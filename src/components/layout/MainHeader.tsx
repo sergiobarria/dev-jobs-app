@@ -27,6 +27,7 @@ const Header = styled.header`
     align-items: flex-start;
     justify-content: space-between;
     padding: 2rem 1.5rem 0;
+    max-width: 1110px;
   }
 
   @media (min-width: 768px) {
@@ -42,8 +43,14 @@ const Header = styled.header`
     background-image: url('/assets/desktop/bg-pattern-header.svg');
 
     nav {
-      max-width: 1110px;
       margin: 0 auto;
+    }
+  }
+
+  @media (min-width: 1440px) {
+    nav {
+      padding-left: 0;
+      padding-right: 0;
     }
   }
 `;
