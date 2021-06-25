@@ -48,10 +48,8 @@ const CardLink = styled(Link)`
 `;
 
 const Card = styled.article`
-  /* grid-column: span 12; */
   background-color: ${props => props.theme.elements};
   border-radius: 5px;
-  /* height: 10rem; */
   position: relative;
 `;
 
