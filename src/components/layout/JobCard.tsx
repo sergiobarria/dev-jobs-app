@@ -15,7 +15,7 @@ const JobCard: React.FC<IJob> = props => {
     location,
   } = props;
   return (
-    <CardLink to={`jobs/${id}`}>
+    <CardLink to={`details/${id}`}>
       <Card>
         <LogoContainer style={{ backgroundColor: logoBackground }}>
           <img src={logo} alt="logo" />
@@ -51,6 +51,11 @@ const Card = styled.article`
   background-color: ${props => props.theme.elements};
   border-radius: 5px;
   position: relative;
+  transition: transform 200ms ease-in-out;
+
+  &:hover {
+    transform: scale(1.05);
+  }
 `;
 
 const LogoContainer = styled.div`

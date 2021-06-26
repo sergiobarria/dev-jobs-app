@@ -7,18 +7,28 @@ export interface ITheme {
   elements: string;
 }
 
-export interface IJob {
+export interface ICompany {
   id: number;
   company: string;
   logo: string;
   logoBackground: string;
+  website: string;
+  apply: string;
+}
+
+export interface IJob extends ICompany {
   position: string;
   postedAt: string;
   contract: string;
   location: string;
-  website: string;
-  apply: string;
   description: string;
   requirements: { content: string; items: string[] };
   role: { content: string; items: string[] };
+}
+
+export interface ButtonProps {
+  px?: string;
+  py?: string;
+  onClick?: () => void;
+  disabled?: boolean;
 }

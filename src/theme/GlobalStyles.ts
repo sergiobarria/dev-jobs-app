@@ -18,6 +18,7 @@ export const GlobalStyles = createGlobalStyle`
 
   a {
     text-decoration: none;
+    color: ${props => props.theme.text};
   }
 
   h1, h2, h3, h4 {

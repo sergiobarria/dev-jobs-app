@@ -17,11 +17,11 @@ const ButtonPrimary: React.FC<ButtonProps> = ({
 };
 
 const Button = styled.button<ButtonProps>`
-  background-color: ${props => props.theme.accent};
+  background-color: rgba(89, 100, 224, 0.1);
+  color: ${props => props.theme.accent};
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  color: white;
   font-weight: 700;
   font-family: 'Kumbh Sans', sans-serif;
   transition: all 300ms ease-in-out;
@@ -31,7 +31,7 @@ const Button = styled.button<ButtonProps>`
   padding-bottom: ${props => props.py};
 
   &:hover {
-    background-color: ${props => props.theme.accentLight};
+    background-color: rgba(89, 100, 224, 0.35);
   }
 
   &:disabled {

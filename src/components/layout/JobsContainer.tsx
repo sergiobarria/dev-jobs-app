@@ -52,6 +52,7 @@ const GridContainer = styled.section`
 
   @media (min-width: 768px) {
     column-gap: 1rem;
+    width: 90%;
     max-width: 1110px;
     margin: 6rem auto 0;
   }
